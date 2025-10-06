@@ -27,6 +27,8 @@ const useFunctions = createSingleton("Functions");
 const useCooldowns = createSingleton("Cooldowns");
 const useGiveaways = createSingleton("Giveaways");
 const useResponder = createSingleton("Responder");
+const useHooks = new Map();
+const useStore = new Map();
 
 const modinteraction = async (message) => {
 	message.user = message.author;
@@ -56,4 +58,6 @@ module.exports = {
 	useGiveaways,
 	useResponder,
 	modinteraction,
+	useHooks,
+	useStore,
 };

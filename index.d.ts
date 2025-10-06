@@ -21,3 +21,21 @@ export function useFunctions(Functions?: any): customMap;
 export function useCooldowns(Cooldowns?: any): customMap;
 export function useResponder(Responder?: any): customMap;
 export function modinteraction(message?: Message): CommandInteraction;
+/**
+ * @description Hooks store commands and data
+ * @example
+ * const { useHooks } = require("@zibot/zihooks");
+ * useHooks.set("myHook", myHook);
+ * const myHook = useHooks.get("myHook");
+ * @returns {customMap}
+ */
+export const useHooks: customMap;
+/**
+ * @description Store store commands and data
+ * @example
+ * const { useStore } = require("@zibot/zihooks");
+ * useStore.set("myStore", myStore);
+ * const myStore = useStore.get("myStore");
+ * @returns {customMap}
+ */
+export const useStore: customMap;
